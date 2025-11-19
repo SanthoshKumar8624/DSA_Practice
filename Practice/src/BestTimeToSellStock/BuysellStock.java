@@ -1,7 +1,5 @@
 package BestTimeToSellStock;
-
 import java.util.Arrays;
-
 public class BuysellStock
 {
     public static int maxProfit(int [] price)
@@ -27,7 +25,7 @@ public class BuysellStock
         System.out.println("Max Profit from Stock :"+maxProfit(prices));
     }
 }
-//here we biggest positve differnce from the stock or Prices array.
+//here we calculate the biggest positive difference from the stock or Prices array.
 //   6-1=5!!  on day2 we get min price as 1 later
-//   we compare next days like  5-1=4 3-1=2 6-1=5✅ 4-1=3..
+//   we compare next days like  5-1=4 3-1=2 6-1=5✅ 4-1=3 so on..
 //   sup 16-11-25
