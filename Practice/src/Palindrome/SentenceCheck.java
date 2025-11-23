@@ -20,11 +20,9 @@ public class SentenceCheck
     public static void main(String[] args) {
         String s="My Mom set to learn Malayalam but I am from katak in gadag".toLowerCase();
         String [] A=s.split(" ");
-        for(int i=0;i<A.length;i++)
-        {
-            if(check(A[i]))
-            {
-                System.out.println(A[i]);
+        for (String string : A) {
+            if (check(string)) {
+                System.out.println(string);
             }
         }
     }
