@@ -28,7 +28,7 @@ public class Triangle
     {
         for(int i=1;i<=n;i++)
         {
-            for(int s=n-1;s>=i;s--)
+            for(int s=n-i;s>0;s--)
             {
                 System.out.print(" ");
             }
@@ -43,7 +43,7 @@ public class Triangle
     {
         for(int i=1;i<=n;i++)
         {
-            for(int s=n-1;s>=i;s--)
+            for(int s=n-i;s>0;s--)
             {
                 System.out.print(" ");
             }
@@ -54,10 +54,23 @@ public class Triangle
             System.out.println("");
         }
     }
+    public static void IPyramid(int n)//here, j loop 2*(n-1) and in the spaces,
+    {
+        for(int i=1;i<=n;i++)
+        {
+            for(int s=1;s<=i-1;s++)
+            {
+                System.out.print(" ");
+            }
+            for(int j=1;j<=2*(n-i)+1;j++)
+            {
+                System.out.print("+");
+            }
+            System.out.println("");
+        }
+    }
     public static void main(String[] args)
     {
-        Triangle t=new Triangle();
-
         Ltriangle(5);
         System.out.println("--------------------");
         Rtriangle(5);
@@ -65,5 +78,8 @@ public class Triangle
         RAligntriangle(5);
         System.out.println("--------------------");
         Pyramid(5);
+        System.out.println("--------------------");
+        IPyramid(5);
+
     }
 }
