@@ -11,8 +11,8 @@ public class BubbleSort
         {
             for(int j=0;j<n-1-i;j++)
             {
-                if(a[j]>a[j+1])   // In Bubble Sort, We compare
-                {
+                if(a[j]>a[j+1])   //compare first index with second,then
+                {                    //if greater swap else move j
                     int temp=a[j];
                     a[j]=a[j+1];
                     a[j+1]=temp;
