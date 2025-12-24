@@ -15,7 +15,7 @@ public class leftRotate
     public static void main(String[] args)
     {
         int [] a={1,2,3,4,5};
-        int k=3;
+        int k=1;
         System.out.println(Arrays.toString(a));
         lRotate(a,k);
     }
