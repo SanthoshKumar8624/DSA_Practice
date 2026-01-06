@@ -2,7 +2,7 @@ package HashTables;
 
 import java.util.HashMap;
 
-public class containDuplicateII
+public class containDuplicateII   //219. Contains Duplicate II
 {
     public static boolean containsNearbyDuplicate(int[] nums, int k)
     {

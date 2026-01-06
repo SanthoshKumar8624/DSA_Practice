@@ -27,18 +27,18 @@ public class isomorphicString//205. Isomorphic Strings
     }
     public static boolean isomorphicCheck(String a,String b)
     {
-        int [] mapab=new int[127];
-        int [] mapba=new int[127];
+        int [] mapA=new int[127];
+        int [] mapB=new int[127];
         for(int i=0;i<a.length();i++)
         {
-            char charab=a.charAt(i);
-            char charba=b.charAt(i);
-            if(mapab[charab]!=mapba[charba])
+            char charA=a.charAt(i);
+            char charB=b.charAt(i);
+            if(mapA[charA]!=mapB[charB])// typecast: char->integer a->90
             {
                 return false;
             }
-            mapab[charab]=i+1;
-            mapba[charba]=i+1;
+            mapA[charA]=i+1;//mapA[90]=1
+            mapB[charB]=i+1;//mapB[91]=1
         }
         return true;
     }
