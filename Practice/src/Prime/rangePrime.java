@@ -1,35 +1,31 @@
 package Prime;
-import java.util.Scanner;
 public class rangePrime
 {
-    public static void main(String[] args)
+    public static void primeFrom(int limit)
     {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        for(int j=n+1;j<100;j++)
+        for(int n=2;n<=limit;n++)
         {
-            n=j;
-            boolean flag=true;
-            if(n<=1)
+            boolean isprime=true;
+            for(int i=2;i<=Math.sqrt(n);i++)
             {
-                flag=false;
-            }
-            else
-            {
-                for(int i=2;i<=Math.sqrt(n);i++)
+                if(n%i==0)
                 {
-                    if(n%i==0)
-                    {
-                        flag=false;
-                        break;
-                    }
+                    isprime=false;
+                    break;
                 }
             }
-            if(flag)
+            if(isprime)
             {
-                System.out.println("Next Prime is :"+n);
+                System.out.print(n);
+                System.out.print(" ");
             }
         }
+        System.out.println();
+    }
+    public static void main(String[] args)
+    {
+        primeFrom(100);
+        primeFrom(50);
+
     }
 }
-
