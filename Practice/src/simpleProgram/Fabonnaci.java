@@ -13,8 +13,16 @@ public class Fabonnaci
             System.out.println(c);//0 1 1 2 3 5
         }
     }
+    public static int fabonnaciRecursion(int n)
+    {
+        if(n==0) {return 0;}
+        else if(n==1 || n==2){return 1;}
+        else {return fabonnaciRecursion(n-1)+fabonnaciRecursion(n-2);}
+    }
     public static void main(String[] args)
     {
         fabonnaci(6);
+        System.out.println("-------------------");
+        System.out.println(fabonnaciRecursion(7));
     }
 }
