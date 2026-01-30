@@ -6,7 +6,7 @@ public class ValidParentheses
 {
     public static boolean isValidParentheses(String str)
     {
-        Stack<Character> stack=new Stack<>();
+        Stack<Character> stack=new Stack<>();//naresh
         int n=str.length();
         for(int i=0;i<n;i++)
         {
