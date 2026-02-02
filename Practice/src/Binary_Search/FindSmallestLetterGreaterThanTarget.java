@@ -1,5 +1,4 @@
 package Binary_Search;
-
 public class FindSmallestLetterGreaterThanTarget
 {
     public static void main(String[] args) {
