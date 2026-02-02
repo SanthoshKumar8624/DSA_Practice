@@ -1,7 +1,5 @@
 package Binary_Search;
-
 import java.util.Arrays;
-
 public class CeilingAndFloor
 {
     public static void main(String[] args)
