@@ -1,7 +1,5 @@
 package Arrays;
-
 import java.util.Arrays;
-
 public class FindSecondMinAndMax
 {
     public static int find2ndMin(int[] a)
