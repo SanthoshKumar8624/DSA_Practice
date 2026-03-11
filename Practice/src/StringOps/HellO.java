@@ -15,9 +15,9 @@ public class HellO {
             }
             else
             {
-                sb.append((char)(s.charAt(0)-32));
-                sb.append(s,1, s.length()-1);
-                sb.append((char)(s.charAt(s.length()-1)-32));
+                sb.append((char)(s.charAt(0)-32));//first char to uppercase
+                sb.append(s,1, s.length()-1);//in btw do nothing
+                sb.append((char)(s.charAt(s.length()-1)-32));//last char to uppercase
                 sb.append(" ");
             }
         }
